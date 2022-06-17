@@ -17,7 +17,7 @@ body{background: black;}
 	display: flex;
 	justify-content: center;
 	align-items: center ;
-	min-height: 100vh;
+	min-height: 70vh;
 	flex-direction: column;
 	gap: 20px;}
 button{
@@ -85,10 +85,10 @@ button:hover i:after{
 				background:linear-gradient(to right,#6eff3e,#1e9bff);
    -webkit-background-clip: text;
     color: transparent;
-    position: absolute;
-    bottom: 10%;
-    right: 10px;
-    text-align: center;}
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    text-align:center ;}
     
     /* النسب المؤية القسم العلوي */
 .container{
@@ -142,8 +142,10 @@ button:hover i:after{
    -webkit-background-clip: text;
     color: transparent;
     font-weight: bolder;
-    position: absolute;
-    top: 160px;}
+    position: relative;
+    top: 160px;
+    margin-bottom: 30%;
+    }
 .div-name{				
     display: flex;
     justify-content: center;}
