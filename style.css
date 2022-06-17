@@ -17,7 +17,7 @@ body{background: black;}
 	display: flex;
 	justify-content: center;
 	align-items: center ;
-	min-height: 70vh;
+	min-height: 60vh;
 	flex-direction: column;
 	gap: 20px;}
 button{
@@ -144,7 +144,7 @@ button:hover i:after{
     font-weight: bolder;
     position: relative;
     top: 160px;
-    margin-bottom: 30%;
+    margin-bottom: 40%;
     }
 .div-name{				
     display: flex;
