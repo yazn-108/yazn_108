@@ -1,74 +1,150 @@
-*{text-align: center;}
-a{text-decoration:none;}
-body{background-image:   url('https://www9.0zz0.com/2022/03/09/15/315432792.jpg');
-background-repeat: no-repeat;
-background-size: 100% 718px ;}
-h3{font-family: 'Roboto', sans-serif;
-     background: rgb(63,94,251);
-       background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(12,116,255,1) 36%, rgba(147,44,44,1) 53%, rgba(255,0,0,1) 100%);
-       color: transparent;
-			    	   background-clip: text ;
-        -webkit-background-clip: text;}
-.img-1{width: 105px;
-        height: 105px;
-          border-radius: 50%;
-          }
-.img-2{width: 35px;
-        height: 35px;
-         border: none;
-          border-radius: 50%;
-           position: relative;
-            right: 120px;
-             top: 3px;}
-.img-3{width: 35px;
-        height: 35px;
-         border:  none;
-          border-radius: 50%;
-           position: relative;
-            right: 105px;
-             top: 3px;}
-.img-4{width: 35px;
-        height: 35px;
-         border:  none;
-          border-radius: 50%;
-           position: relative;
-            right: 117px;
-             top: 3px;}
-.img-6{width: 35px;
-        height: 35px;
-         border:  none;
-          border-radius: 50%;
-           position: relative;
-            right: 108px;
-             top: 3px;}
-.img-7{width: 35px;
-        height: 35px;
-         border:  none;
-          border-radius: 50%;
-           position: relative; 
-            right: 117px;
-             top: 3px;}
-.div-1{
-font-family:'Permanent Marker',cursive;}
-input[type="submit"]{
- font-family: inherit;
-  background: rgb(2,0,36);
-   background:linear-gradient(90deg,  rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%,           rgba(0,212,255,1) 100%); 
-   color: #fff;
-    border: none;
-     border-radius: 25px;		
-      position: relative;
-       bottom: 10px;
-        right: 20px;
-         font-size: 16px;
-          letter-spacing: 1px;}
-.div-2{font-family: 'Amiri', serif;}
-input[type="button"]{
- font-family: inherit;
-  background: rgb(2,0,36);
-   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
-    color: white;
-     border: none;
-      border-radius: 30px;		
-       font-size: 16px;
-        letter-spacing: 1px;}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* نوع الخط */
+ font-family: 'Poppins', sans-serif;
+  /* منع نسخ المحتوى */ 
+ -webkit-touch-callout:none;
+ -webkit-user-select:none;
+ -khtml-user-select:none;
+ -ms-user-select:none;
+ -moz-user-select:none;}
+body{background: black;}
+#buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center ;
+	min-height: 100vh;
+	flex-direction: column;
+	gap: 20px;}
+button{
+				border: none;
+				padding: 10px 20px;
+				width: 100px;
+				transition: 0.5s;
+				position: relative;
+				background: #444;
+				border-radius: 25px;
+				text-transform: uppercase;
+				text-align: center;}
+button:hover{
+				letter-spacing: 3px;
+				width: 150px;
+				background: var(--cv);
+				box-shadow: 0 0 35px var(--cv);
+				color: var(--cv);}
+button:before{
+				content: "";
+				position: absolute;
+				inset: 2px;
+				background-color: #27282C;
+			border-radius: 25px;}
+
+span{
+    position: relative;
+				z-index: 1;
+				color: white;
+				display: flex;
+				justify-content: center;
+	   align-items: center ;}
+button:hover span{color: var(--cv);}
+button i{
+				position: absolute;
+				inset:0;
+				display: block;}
+	i::before{
+    content: "";
+				position: absolute;
+				left: 80%;
+				top: -3.5px;
+				border: solid 2px var(--cv);
+				width: 10px;
+				height: 5px;
+				background: #444;
+				transition: .5s;}
+button:hover i:before{
+				width: 20px;
+				left: 5%;}
+i::after{
+   content: "";
+				position: absolute;
+				right: 80%;
+				bottom: -10%;
+				border: solid 2px var(--cv) ;
+				width: 10px;
+				height: 5px;
+				background: #444;
+				transition: .5s;}
+button:hover i:after{
+				width: 20px;
+				right: 5%;}
+.p{ direction: rtl;
+				background:linear-gradient(to right,#6eff3e,#1e9bff);
+   -webkit-background-clip: text;
+    color: transparent;
+    position: absolute;
+    bottom: 10%;
+    right: 10px;
+    text-align: center;}
+    
+    /* النسب المؤية القسم العلوي */
+.container{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				top: 2%;
+				gap: 30px;
+				width: 100%;}
+.div{
+				background: black;
+				width: 85px;
+				height: 85px;
+				border-radius: 50%;
+				overflow: hidden;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: white;}
+.div2{
+		background:linear-gradient(to  right,#6eff3e,#1e9bff);
+				width: 100px;
+				height: 50px;
+				animation: spin 3000s linear;}
+				/* تكرار الدوران  */
+    @keyframes spin{
+    to {transform:rotate(10000turn) ;}}
+.div3{
+				border-radius: 50%;
+				background: black;
+				width: 75px;
+				height: 75px;
+				position: absolute;
+				z-index: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;}
+.p-100{
+				background:linear-gradient(to left,#6eff3e,#1e9bff);
+   -webkit-background-clip: text;
+    color: transparent;
+				font-weight: bold;
+				text-transform: uppercase;}
+.p-html,.p-css{
+				font-weight: bold;
+				text-transform: uppercase;}
+.my-name{
+				background:linear-gradient(to left,#6eff3e,#1e9bff);
+				direction: ltr;
+   -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+    position: absolute;
+    top: 160px;}
+.div-name{				
+    display: flex;
+    justify-content: center;}
+
